@@ -5,21 +5,21 @@
     var Plugin, defaults, pluginName;
     pluginName = "slidesjs";
     defaults = {
-      width: 940,
-      height: 528,
+      width: 1280,
+      height: 655,
       start: 1,
       navigation: {
-        active: true,
+        active: false,
         effect: "slide"
       },
       pagination: {
-        active: true,
+        active: false,
         effect: "slide"
       },
       play: {
         active: false,
         effect: "slide",
-        interval: 5000,
+        interval: 30000,
         auto: false,
         swap: true,
         pauseOnHover: false,
@@ -27,7 +27,7 @@
       },
       effect: {
         slide: {
-          speed: 500
+          speed: 1500
         },
         fade: {
           speed: 300,
@@ -147,16 +147,16 @@
         stopButton = $("<a>", {
           "class": "slidesjs-stop slidesjs-navigation",
           href: "#",
-          title: "Stop",
-          text: "Stop"
+          title: "",
+          text: ""
         }).appendTo($element);
         playButton.click(function(e) {
           e.preventDefault();
-          return _this.play(true);
+          return _this.play(false);
         });
         stopButton.click(function(e) {
           e.preventDefault();
-          return _this.stop(true);
+          return _this.stop(false);
         });
         if (this.options.play.swap) {
           stopButton.css({
@@ -213,8 +213,8 @@
       });
       width = $element.width();
       height = (this.options.height / this.options.width) * width;
-      this.options.width = width;
-      this.options.height = height;
+      this.options.width = 1280;
+      this.options.height = 540;
       return $(".slidesjs-control, .slidesjs-container", $element).css({
         width: width,
         height: height

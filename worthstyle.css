@@ -475,6 +475,7 @@ ul {
 	display: inline-block;
 	 /*height: 512px;*/
 	width: 95%;
+	border: 2px solid #748d7d;
 }
 
 .app-des {
@@ -507,7 +508,7 @@ ul {
 	font-family: 'Glegoo', sans-serif;
 	font-size: 16px;
 	display: inline-block;
-	max-width: 740px;
+	max-width: 650px;
 	vertical-align: middle;
 	padding: 15px;
 	color: #f2f2f2;
@@ -562,14 +563,16 @@ ul {
 
 }
 
-@media only screen and (max-width : 960px) {
+@media only screen and (max-width : 1210px) {
 	.container {
 		max-height: 510px;
 	}
 	.intro h2 {
 		font-size: 36px;
 		line-height: 48px;
-
+	}
+	.intro {
+		margin-top: -105px;
 	}
 
 	.more {
@@ -588,6 +591,51 @@ ul {
 		text-align: center;
 	}
 	.web-app-two {
+		text-align: center;
+	}
+	.profile {
+		text-align: center;
+	}
+	.app-des {
+		margin-top: -80px;
+		margin-bottom: 80px;
+	}
+	/*.about-des {
+		max-width: 650px;
+	}*/
+}
+
+@media only screen and (max-width : 960px) {
+	.container {
+		max-height: 510px;
+	}
+	.intro h2 {
+		font-size: 36px;
+		line-height: 48px;
+
+	}
+	.intro {
+		margin-top: -130px;
+	}
+	.more {
+		font-size: 36px;
+		line-height: 48px;
+
+	}
+	.in-con {
+		width: 768px;
+	}
+	.app-img {
+		width: 768px;
+		margin-top: -100px;
+	}
+	.web-app-one {
+		text-align: center;
+	}
+	.web-app-two {
+		text-align: center;
+	}
+	.profile {
 		text-align: center;
 	}
 	.app-des {
@@ -622,12 +670,15 @@ ul {
 	.web-app-two {
 		text-align: center;
 	}
+	.profile {
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width : 480px) {
 	header {
-		padding: 12px;
-		height: 100px;
+		/*padding: 12px;*/
+		height: 85px;
 		top: 0px;
 		 /*position: absolute;*/
 	}
@@ -642,12 +693,13 @@ ul {
 	}
 	.container {
 		max-height: 240px;
+		margin-top: -20px;
 	}
 	#slides {
 		margin-top: 100px;
 	}
 	.intro {
-		margin-top: -5px;
+		margin-top: -120px;
 	}
 	.intro h2 {
 		font-size: 24px;
@@ -688,10 +740,16 @@ ul {
 	.web-app-two {
 		text-align: center;
 	}
+	.profile {
+		text-align: center;
+	}
 	.app-des {
 		margin-bottom: 60px;
 	}
-	
+}
 
-
+@media only screen and (max-width : 320px) {
+	.intro {
+		margin-top: -65px;
+	}
 }
